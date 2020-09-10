@@ -14,7 +14,7 @@ y_s = 32 + 1.8 * x_s
 
 #  model using Functional API
 inputs = tf.keras.Input(shape=(1,))
-outputs =  Dense(10, use_bias=True,)(inputs)
+outputs =  Dense(1, use_bias=True,)(inputs)
 model = tf.keras.Model(inputs=inputs, outputs=outputs)
 
 
