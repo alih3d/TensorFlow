@@ -21,9 +21,9 @@ model = tf.keras.Model(inputs=inputs, outputs=outputs)
 model.compile(optimizer=tf.keras.optimizers.RMSprop(learning_rate=0.1),
               loss='mean_squared_error',
               metrics=['mse'])
-model.fit(x=x_s, y=y_s, epochs=500, verbose=0)
+model.fit(x=x_s, y=y_s, epochs=100, verbose=0)
 
 
 pred = model.predict([10])
 
-print(pred)
+print(pred) 
